@@ -6,6 +6,5 @@ const _params = {
     menu_db : process.env.MENU_DB
 }
 
-// console.log(_params)
 
 module.exports = _params;

@@ -1,12 +1,14 @@
+require('dotenv').config()
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express()
-require('dotenv').config()
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
 const routes = require('./routes/routes');
 routes(app)
+
 const params = require('./settings/settings');
 const port = params.port;
 
